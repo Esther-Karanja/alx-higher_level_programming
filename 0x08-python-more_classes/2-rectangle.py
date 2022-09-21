@@ -28,14 +28,15 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, value)
-    if type(value) is not int:
-        raise TypeError("length must be an integer")
-    if value < 0:
-        raise ValueError("length must be >= 0")
-    self.__width = value
+    def height(self, value):
+        if type(value) is not int:
+            raise TypeError("length must be an integer")
+        if value < 0:
+            raise ValueError("length must be >= 0")
+        self.__width = value
 
     def area(self):
+        """returns the area of the rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
