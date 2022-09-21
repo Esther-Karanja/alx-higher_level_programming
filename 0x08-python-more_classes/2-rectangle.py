@@ -43,10 +43,4 @@ class Rectangle:
         """returns the perimeter of the rectangle"""
         if self.__width is 0 or self.__height is 0:
             return 0
-        return (self.width * 2) + (self.lengith * 2)
-
-    print("my_rectangle")
-    for i in range(width):
-        for j in range(lenth):
-            print('#', end=' ')
-            print()
+        return (2 * self.width) + (2 * self.length)
