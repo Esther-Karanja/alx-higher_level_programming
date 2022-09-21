@@ -5,7 +5,7 @@ Defines a class rectangle
 
 
 class Rectangle:
-    """A rectangle class with atrributes width and length"""
+    """A rectangle class with attributes width and length"""
     def __init__(self, width=0, height=0):
         """initializes the rectangle"""
         self.width = width
@@ -37,10 +37,10 @@ class Rectangle:
 
     def area(self):
         """returns the area of the rectangle"""
-        return self.width * self.length
+        return self.__width * self.__length
 
     def perimeter(self):
         """returns the perimeter of the rectangle"""
         if self.__width is 0 or self.__height is 0:
             return 0
-        return (2 * self.width) + (2 * self.length)
+        return (2 * self.__width) + (2 * self.__length)
