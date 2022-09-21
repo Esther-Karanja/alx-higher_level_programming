@@ -7,6 +7,7 @@ Defines a class rectangle
 class Rectangle:
     """A rectangle class with atrributes and methods"""
     def __init__(self, width=0, length=0):
+        """initialize the rectangle"""
         self.width = width
         self.length = length
 
@@ -40,4 +41,4 @@ class Rectangle:
     def perimeter(self):
         if self.__width is 0 or self.__height is 0:
             return 0
-        return (self.width + self.length) * 2
+        return (self.width * 2) + (self.lengith * 2)
