@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for i is range(97, 123):
-    print(char(i), end="")
+    print("{:c}".format(i), end='')
